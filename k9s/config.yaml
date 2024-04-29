@@ -1,0 +1,3 @@
+logs:
+  sinceSeconds: 500
+  tailLines: 1000

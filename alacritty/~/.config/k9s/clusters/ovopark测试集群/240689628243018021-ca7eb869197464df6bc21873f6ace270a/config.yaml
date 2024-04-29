@@ -1,0 +1,15 @@
+k9s:
+  cluster: ovopark测试集群
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+    - all
+    - xundiantest
+    - xundian
+    - default
+  view:
+    active: sec
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

@@ -1,0 +1,13 @@
+k9s:
+  cluster: 正式服集群
+  namespace:
+    active: xundian
+    lockFavorites: false
+    favorites:
+    - xundian
+    - default
+  view:
+    active: dp
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost
