@@ -116,7 +116,7 @@
  shift + cmd - w : yabai -m window --resize top:0:20
 
 # set insertion point in focused container
- ctrl + alt - h : yabai -m window --insert west
+# ctrl + alt - h : yabai -m window --insert west
 
 
 # toggle window split type
@@ -151,6 +151,11 @@ ctrl + alt - 2 : yabai -m window --space 2
 ctrl + alt - 3 : yabai -m window --space 3
 ctrl + alt - 4 : yabai -m window --space 4
 ctrl + alt - 5 : yabai -m window --space 5
+ctrl + alt - 6 : yabai -m window --space 6
+ctrl + alt - 7 : yabai -m window --space 7
+ctrl + alt - 8 : yabai -m window --space 8
+ctrl + alt - 9 : yabai -m window --space 9
+ctrl + alt - 0 : yabai -m window --space 0
  # focus monitor
  cmd + alt - k  : yabai -m display --focus 1
  cmd + alt - j  :  yabai -m display --focus 2

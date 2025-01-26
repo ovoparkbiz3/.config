@@ -1,3 +1,5 @@
-logs:
-  sinceSeconds: 500
-  tailLines: 1000
+k9s:
+  logger:
+    tail: 9999
+    sinceSeconds: 500
+  screenDumpDir: ~/.config/k9s/screendumps

@@ -1,0 +1,30 @@
+lastupdatecheck: 1734003654
+recentrepos:
+    - /Users/sifan/.config
+    - /Users/sifan/code/ovopark/shopweb-check
+    - /Users/sifan/code/ovopark/shop-inspection
+    - /Users/sifan/code/go/pic
+    - /Users/sifan/code/ovopark/check-report
+    - /Users/sifan/code/ovopark/gotaskio
+    - /Users/sifan/code/ovopark/check-job-executor
+    - /Users/sifan/code/ovopark/shopweb-media
+    - /Users/sifan/code/ovopark/check-coordinator
+    - /Users/sifan/code/ovopark/shop-inspection-cdc
+    - /Users/sifan/code/ovopark/multi-language
+    - /Users/sifan/code/rust/zed
+    - /Users/sifan/code/ovopark/nacos-helper
+    - /Users/sifan/code/ovopark/xxl-job
+startuppopupversion: 5
+lastversion: 0.44.1
+customcommandshistory:
+    - git merge --abort
+    - merge --abort
+    - q
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always

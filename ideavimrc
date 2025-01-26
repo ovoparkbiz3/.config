@@ -16,12 +16,12 @@ set wrap
 "map <leader>k <Plug>(easymotion-k)
 "map <leader>j <Plug>(easymotion-j)
 
-imap jk <Esc>
+"imap jk <Esc>
 imap <C-b> <Left>
 imap <C-f> <Right>
 imap <C-p> <Up>
 imap <C-n> <Down>
-
+set clipboard=unnamed
 set incsearch
 " Don't use Ex mode, use Q for formattig.
 map Q gq
@@ -31,6 +31,7 @@ Plug 'vim-scripts/argtextobj.vim'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 set multiple-cursors
+"set which-key
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
 nmap g<C-n> <Plug>NextOccurrence
@@ -41,7 +42,8 @@ nmap <C-j> <C-w>j
 nmap <C-h> <C-w>h
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
 
 nmap <leader>r :action Refactorings.QuickListPopupAction<CR>
 "nmap <leader>r :action RenameElement<CR>
@@ -49,12 +51,15 @@ nmap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nmap gh :action ShowHoverInfo<CR>
 nmap gH :action QuickImplementations<CR>
 nmap gk :action QuickFixes<CR>
+nmap gs :action FileStructurePopup<CR>
+nmap <leader>ls :action FileStructurePopup<CR>
 nmap <leader>w- :action SplitHorizontally<CR>
 nmap <leader>w\ :action SplitVertically<CR>
 nmap <leader>wc :action CloseAllEditors<CR>
 nmap <leader>fc :action GotoClass<CR>
 nmap <leader>ff :action SearchEverywhere<CR>
 nmap <leader>fr :action RecentFiles<CR>
+nmap <leader><leader> :action RecentFiles<CR>
 nmap <leader>fa :action FindInPath<CR>
 nmap <leader>t :action ActivateTerminalToolWindow<CR>
 nmap <leader>e :action ActivateProjectToolWindow<CR>
@@ -62,6 +67,9 @@ nmap <leader>e :action ActivateProjectToolWindow<CR>
 nmap <leader>gm :action ActivateStructureToolWindow<CR>
 nmap <leader>oi :action OptimizeImports<CR>
 nmap <leader>= :action ReformatCode<CR> :action OptimizeImports<CR>
+nmap <leader>sp :action SelectInProjectView<CR>
+nmap <leader>gg :action LazyGit.Open<CR>
+nmap <leader>ci :action ImplementMethods<CR>
 
 nmap <Tab>] :action NextTab<CR>
 nmap <Tab>[ :action PreviousTab<CR>
@@ -76,6 +84,10 @@ nmap <leader><leader>pc :action CloseProject<CR>
 map <leader><leader>o :action RecentProjectListGroup<CR>
 
 nmap <leader>b <Action>(ToggleLineBreakpoint)
+
+nmap zC :action CollapseAllRegions<CR>
+nmap zO :action ExpandAllRegions<CR>
+
 
 nmap gi :action GotoImplementation<CR>
 
@@ -153,15 +165,3 @@ nmap '8 :action GotoBookmark8<CR>
 nmap '9 :action GotoBookmark9<CR>
 
 
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-
-
-
-" Find more examples here: https://jb.gg/share-ideavimrc

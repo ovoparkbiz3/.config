@@ -2,9 +2,10 @@
 [window]
 blur = true
 opacity = 0.8
-padding = { x = 10, y = 10 }
-decorations ="full"
-
+padding = { x = 0, y = 0 }
+decorations = "Full"
+#decorations_theme_variant = "Dark"
+resize_increments = true
 [env]
 AUTO_TMUX = "1"
 [font]
@@ -17,4 +18,8 @@ osc52 = "CopyPaste"
 [keyboard]
 bindings = [
   { key = "J", mods = "Command", chars = "\u0001" },
+  { key = "K", mods = "Command", action="ToggleViMode" },
 ]
+
+[colors]
+
